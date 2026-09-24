@@ -35,3 +35,25 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 footer a{color:#fff}
 @media(max-width:860px){.proof-section,.lead-section{grid-template-columns:1fr}.proof-rating{align-items:flex-start;text-align:left}.testimonial-grid{grid-template-columns:1fr}.lead-section{gap:2rem}.nj-search-grid{grid-template-columns:1fr}.hero-brokerages img{max-width:155px;max-height:62px}}
 @media(max-width:560px){.search-market-group{padding:1.15rem}.form-row{grid-template-columns:1fr}.hero-brokerages{gap:.7rem}.hero-brokerages img{max-width:135px;max-height:55px}}
+
+/* Mailchimp lead capture */
+.mailchimp-shell{min-width:0}
+#mc_embed_signup{background:transparent!important;width:100%!important;font:inherit!important}
+#mc_embed_signup form{margin:0!important}
+#mc_embed_signup h3{font-family:Georgia,serif;font-size:2rem;line-height:1.05;margin:.2rem 0 .5rem;color:var(--ink)}
+#mc_embed_signup .indicates-required{text-align:left!important;margin:.2rem 0 1rem!important;color:var(--muted);font-size:.8rem}
+#mc_embed_signup .mc-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+#mc_embed_signup .mc-field-group{width:100%!important;min-height:0!important;padding:0!important;clear:none!important}
+#mc_embed_signup .mc-field-group label{display:block;font-weight:800;font-size:.9rem;margin:0 0 .4rem}
+#mc_embed_signup .mc-field-group input,
+#mc_embed_signup .mc-field-group textarea{width:100%!important;font:inherit!important;border:1px solid #bbb!important;border-radius:12px!important;padding:.8rem .9rem!important;background:#fff!important;color:var(--ink)!important;min-height:48px}
+#mc_embed_signup .message-field{margin-top:1rem}
+#mc_embed_signup .message-field textarea{min-height:120px!important;resize:vertical}
+#mc_embed_signup .asterisk{color:#9b341f!important}
+#mc_embed_signup .response{width:100%!important;margin:.75rem 0!important;padding:.75rem 0!important;font-weight:700!important}
+#mc_embed_signup .mc-submit-row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1rem}
+#mc_embed_signup #mc-embedded-subscribe{margin:0!important;height:auto!important;width:auto!important;line-height:1.2!important;background:var(--ink)!important;color:#fff!important;border:1px solid var(--ink)!important;border-radius:999px!important;padding:.9rem 1.25rem!important;font-weight:800!important}
+#mc_embed_signup #mc-embedded-subscribe:hover{background:#333!important}
+.mailchimp-note{color:var(--muted);font-size:.78rem}
+#mc_embed_signup div.mce_inline_error{background:transparent!important;color:#9b341f!important;margin:.35rem 0 0!important;padding:0!important}
+@media(max-width:560px){#mc_embed_signup .mc-form-grid{grid-template-columns:1fr}#mc_embed_signup #mc-embedded-subscribe{width:100%!important}.mc-submit-row{align-items:stretch!important}}
