@@ -12,11 +12,29 @@ if(toggle&&nav){
 }
 const year=document.querySelector('#year');
 if(year) year.textContent=new Date().getFullYear();
-const realtorVideo=document.querySelector('#realtorVideo');
-const heroMedia=document.querySelector('#heroMedia');
-if(realtorVideo&&heroMedia){
-  const revealVideo=()=>{heroMedia.hidden=false;};
-  realtorVideo.addEventListener('loadedmetadata',revealVideo,{once:true});
-  realtorVideo.addEventListener('canplay',revealVideo,{once:true});
-  if(realtorVideo.readyState>=1) revealVideo();
+
+const leadForm=document.querySelector('#leadForm');
+if(leadForm){
+  leadForm.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    const data=new FormData(leadForm);
+    const name=(data.get('name')||'').toString().trim();
+    const email=(data.get('email')||'').toString().trim();
+    const phone=(data.get('phone')||'').toString().trim();
+    const market=(data.get('market')||'').toString();
+    const need=(data.get('need')||'').toString();
+    const message=(data.get('message')||'').toString().trim();
+    const subject=`Website inquiry: ${market} — ${need}`;
+    const body=[
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone || 'Not provided'}`,
+      `Market: ${market}`,
+      `Needs help with: ${need}`,
+      '',
+      'Message:',
+      message || 'No additional message.'
+    ].join('\n');
+    window.location.href=`mailto:janka4re@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
 }
