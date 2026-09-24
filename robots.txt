@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://janka4re-dot.github.io/janka-romanski-real-estate/sitemap.xml
