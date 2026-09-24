@@ -57,3 +57,102 @@ footer a{color:#fff}
 .mailchimp-note{color:var(--muted);font-size:.78rem}
 #mc_embed_signup div.mce_inline_error{background:transparent!important;color:#9b341f!important;margin:.35rem 0 0!important;padding:0!important}
 @media(max-width:560px){#mc_embed_signup .mc-form-grid{grid-template-columns:1fr}#mc_embed_signup #mc-embedded-subscribe{width:100%!important}.mc-submit-row{align-items:stretch!important}}
+
+/* Compact + faster layout pass */
+:root{--max:1040px}
+body{font-size:15px;line-height:1.48}
+.site-header{padding:.7rem max(18px,calc((100vw - var(--max))/2))}
+.brand{font-size:.95rem}.brand span{font-size:.64rem}
+.nav{gap:1rem}.nav a{font-size:.82rem}
+.hero{min-height:auto;padding:3.6rem 20px 3rem}
+.hero-layout{grid-template-columns:minmax(0,1.18fr) minmax(300px,.72fr);gap:2rem}
+.hero h1{font-size:clamp(2.45rem,5vw,4.6rem);line-height:.97;margin:.25rem 0 1rem;max-width:720px}
+.hero-copy{max-width:630px;font-size:clamp(.98rem,1.5vw,1.08rem)}
+.hero-actions{margin-top:1.25rem;gap:.6rem}
+.btn{min-height:40px;padding:.6rem .95rem;font-size:.86rem}
+.hero-value-link{margin-top:.75rem;font-size:.86rem}
+.trust-row{gap:.45rem 1rem;margin-top:1.35rem;font-size:.78rem}
+.hero-media{max-width:420px;justify-self:end}
+.hero-media video{border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,.14)}
+.media-caption{font-size:.72rem;margin:.45rem .2rem 0}
+.market-split{margin:-1.4rem auto 0;padding:0 20px}
+.market-card{min-height:220px;padding:1.6rem}
+.market-card h2{font-size:clamp(1.65rem,3vw,2.35rem)}
+.market-label{font-size:.68rem}
+.section{padding:3.5rem 20px}
+.section-narrow{padding:2.6rem 20px;max-width:820px}
+.section h2,.section-narrow h2{font-size:clamp(1.9rem,3.8vw,3.15rem);line-height:1.03}
+.section-heading{margin-bottom:1.35rem;max-width:650px}
+.eyebrow{font-size:.68rem}
+.search-market-group{margin-top:1.5rem;padding:1.25rem;border-radius:18px}
+.search-market-heading{gap:.7rem;margin-bottom:1rem}
+.search-market-heading>span{font-size:1.5rem}
+.search-market-heading h3{font-size:clamp(1.45rem,2.6vw,2rem)}
+.search-grid{gap:.75rem}
+.search-card{min-height:190px;padding:1.05rem;border-radius:14px}
+.search-card h3{font-size:1.08rem;margin:.7rem 0 .3rem}
+.search-card p{font-size:.88rem}
+.search-card a{font-size:.88rem}
+.pill{font-size:.6rem;padding:.28rem .45rem}
+.value-section{gap:2rem}
+.value-actions{gap:.6rem}
+.languages{padding-top:2rem;padding-bottom:2rem;font-size:.84rem}
+.about-janka{grid-template-columns:minmax(180px,.55fr) 1.45fr;gap:2rem}
+.about-photo{max-width:270px}
+.about-photo img{border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.1)}
+.credential-list{gap:.4rem;margin:1rem 0;font-size:.88rem}
+.proof-section{gap:1.4rem 2rem}
+.proof-rating{padding:1.3rem;border-radius:18px}
+.proof-rating strong{font-size:3rem}
+.proof-rating .stars{font-size:1rem;margin:.35rem 0}
+.testimonial-grid{gap:.75rem}
+.testimonial-grid blockquote{padding:1.05rem;border-radius:14px}
+.testimonial-grid blockquote p{font-size:1.05rem}
+.contact-market{gap:2.5rem}
+.broker-logo{max-width:220px;max-height:110px;margin-bottom:1rem;border-radius:8px}
+.bhhs-logo{max-height:125px}
+.contact-box{gap:.6rem}
+.contact-box>a:not(.text-link){padding:.75rem .9rem;border-radius:12px}
+.contact-box strong{font-size:1.15rem}
+.contact-box small{font-size:.68rem}
+.lead-section{grid-template-columns:.72fr 1.28fr;gap:2rem;border-radius:20px;margin-top:1rem;margin-bottom:3rem}
+.direct-contact{gap:.55rem;margin-top:1.2rem;font-size:.9rem}
+.lead-form{gap:.7rem;padding:1.05rem;border-radius:16px}
+#mc_embed_signup h3{font-size:1.45rem;margin:0 0 .35rem}
+#mc_embed_signup .indicates-required{font-size:.7rem!important;margin:.1rem 0 .7rem!important}
+#mc_embed_signup .mc-form-grid{gap:.65rem}
+#mc_embed_signup .mc-field-group label{font-size:.76rem;margin-bottom:.25rem}
+#mc_embed_signup .mc-field-group input,
+#mc_embed_signup .mc-field-group textarea{min-height:38px!important;padding:.55rem .65rem!important;border-radius:9px!important;font-size:.88rem!important}
+#mc_embed_signup .message-field{margin-top:.65rem}
+#mc_embed_signup .message-field textarea{min-height:78px!important}
+#mc_embed_signup .mc-submit-row{gap:.65rem;margin-top:.7rem}
+#mc_embed_signup #mc-embedded-subscribe{padding:.62rem .9rem!important;font-size:.82rem!important}
+.mailchimp-note{font-size:.68rem}
+.mailchimp-brand img{width:125px!important;height:auto!important}
+.cta{border-radius:18px;margin-bottom:3rem}
+footer{padding:2rem max(20px,calc((100vw - var(--max))/2));font-size:.78rem}
+@media(max-width:1000px){
+  .hero-layout{grid-template-columns:1fr .72fr;gap:1.5rem}
+  .hero-media{max-width:360px}
+}
+@media(max-width:860px){
+  .hero-layout{grid-template-columns:1fr}
+  .hero-media{max-width:460px;justify-self:start}
+  .proof-section,.lead-section{grid-template-columns:1fr}
+  .about-janka{grid-template-columns:220px 1fr}
+}
+@media(max-width:560px){
+  body{font-size:14px}
+  .hero{padding:2.7rem 18px 2.3rem}
+  .hero h1{font-size:2.35rem}
+  .hero-media{max-width:100%}
+  .market-card{min-height:185px;padding:1.25rem}
+  .section{padding:2.7rem 18px}
+  .section-narrow{padding:2.1rem 18px}
+  .about-janka{grid-template-columns:1fr}
+  .about-photo{max-width:220px}
+  .search-market-group{padding:1rem}
+  .search-card{min-height:auto}
+  #mc_embed_signup .mc-form-grid{grid-template-columns:1fr}
+}
