@@ -247,3 +247,69 @@ footer{font-size:.68rem;padding:1.4rem max(18px,calc((100vw - var(--max))/2))}
   .market-card h2{font-size:1.25rem}
   .testimonial-grid blockquote{width:132px;min-width:132px;height:46px;min-height:46px}
 }
+
+/* Subtle market identity backgrounds */
+.florida-search-group,
+.nj-search-group{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+.florida-search-group{
+  background:
+    radial-gradient(circle at 12% 18%, rgba(244,198,120,.16) 0, rgba(244,198,120,0) 24%),
+    radial-gradient(circle at 88% 82%, rgba(102,181,193,.10) 0, rgba(102,181,193,0) 26%),
+    linear-gradient(180deg, rgba(255,255,255,.82), rgba(255,255,255,.9)),
+    #fbfaf7;
+}
+
+.florida-search-group::before{
+  content:"";
+  position:absolute;
+  right:12px;
+  bottom:8px;
+  width:112px;
+  height:112px;
+  opacity:.10;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 220'%3E%3Cg fill='none' stroke='%239b8452' stroke-width='6' stroke-linecap='round'%3E%3Cpath d='M85 196C90 155 103 113 120 78'/%3E%3Cpath d='M120 78C98 75 78 66 60 51'/%3E%3Cpath d='M120 78C96 88 77 101 60 119'/%3E%3Cpath d='M120 78C140 70 158 58 174 42'/%3E%3Cpath d='M120 78C142 86 159 99 174 117'/%3E%3Cpath d='M120 78C118 56 116 40 113 22'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events:none;
+  z-index:-1;
+}
+
+.nj-search-group{
+  background:
+    radial-gradient(circle at 14% 20%, rgba(160,176,187,.10) 0, rgba(160,176,187,0) 24%),
+    linear-gradient(180deg, rgba(255,255,255,.84), rgba(247,248,249,.92)),
+    #f4f6f7;
+}
+
+.nj-search-group::before{
+  content:"";
+  position:absolute;
+  right:10px;
+  bottom:6px;
+  width:145px;
+  height:82px;
+  opacity:.09;
+  background-repeat:no-repeat;
+  background-position:center bottom;
+  background-size:contain;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 160'%3E%3Cg fill='%236f7d86'%3E%3Crect x='18' y='82' width='36' height='62' rx='2'/%3E%3Crect x='62' y='58' width='42' height='86' rx='2'/%3E%3Crect x='112' y='76' width='34' height='68' rx='2'/%3E%3Crect x='154' y='42' width='48' height='102' rx='2'/%3E%3Crect x='211' y='68' width='31' height='76' rx='2'/%3E%3Crect x='249' y='91' width='30' height='53' rx='2'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='.7'%3E%3Crect x='27' y='94' width='7' height='9'/%3E%3Crect x='39' y='94' width='7' height='9'/%3E%3Crect x='73' y='72' width='8' height='10'/%3E%3Crect x='86' y='72' width='8' height='10'/%3E%3Crect x='165' y='56' width='9' height='11'/%3E%3Crect x='181' y='56' width='9' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events:none;
+  z-index:-1;
+}
+
+.florida-search-group > *,
+.nj-search-group > *{
+  position:relative;
+  z-index:1;
+}
+
+@media(max-width:560px){
+  .florida-search-group::before{width:86px;height:86px;opacity:.075}
+  .nj-search-group::before{width:112px;height:64px;opacity:.07}
+}
