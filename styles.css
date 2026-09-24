@@ -156,3 +156,94 @@ footer{padding:2rem max(20px,calc((100vw - var(--max))/2));font-size:.78rem}
   .search-card{min-height:auto}
   #mc_embed_signup .mc-form-grid{grid-template-columns:1fr}
 }
+
+/* Extra-compact typography + Google review tiles */
+body{font-size:13px;line-height:1.42}
+.site-header{padding:.55rem max(16px,calc((100vw - var(--max))/2))}
+.brand{font-size:.84rem}.brand span{font-size:.56rem}
+.nav a{font-size:.72rem}
+.eyebrow{font-size:.58rem;letter-spacing:.13em}
+.hero{padding:2.4rem 18px 2rem}
+.hero h1{font-size:clamp(2rem,3.8vw,2.9rem);line-height:1;margin:.2rem 0 .7rem;letter-spacing:-.035em}
+.hero-copy{font-size:.9rem;max-width:560px}
+.hero-actions{margin-top:.9rem}
+.btn{min-height:34px;padding:.48rem .78rem;font-size:.74rem}
+.hero-value-link{font-size:.74rem;margin-top:.55rem}
+.trust-row{font-size:.68rem;margin-top:.9rem;gap:.35rem .8rem}
+.media-caption{font-size:.64rem}
+.market-card{min-height:165px;padding:1.05rem}
+.market-card h2{font-size:1.45rem}
+.market-card p,.market-card strong{font-size:.74rem}
+.section{padding:2.25rem 18px}
+.section-narrow{padding:1.7rem 18px}
+.section h2,.section-narrow h2{font-size:1.8rem;line-height:1.05;letter-spacing:-.025em}
+.section-heading{margin-bottom:.9rem}
+.search-market-heading h3{font-size:1.35rem}
+.search-market-heading>span{font-size:1.15rem}
+.search-card{min-height:150px;padding:.78rem}
+.search-card h3{font-size:.95rem;margin:.5rem 0 .22rem}
+.search-card p{font-size:.74rem;line-height:1.35}
+.search-card a{font-size:.74rem}
+.pill{font-size:.52rem;padding:.2rem .38rem}
+.languages{font-size:.72rem;padding-top:1.3rem;padding-bottom:1.3rem}
+.about-copy p,.proof-intro p,.market-copy p,.lead-copy p,.cta p{font-size:.78rem}
+.credential-list{font-size:.74rem}
+.about-photo{max-width:190px}
+.broker-logo{max-width:170px;max-height:82px}
+.contact-box strong{font-size:.96rem}
+.contact-box small{font-size:.58rem}
+.contact-box>a:not(.text-link){padding:.58rem .7rem}
+.text-link{font-size:.74rem}
+.proof-section{gap:1rem 1.4rem}
+.proof-intro h2{font-size:1.65rem}
+.proof-rating{padding:.8rem 1rem;border-radius:12px;justify-self:start}
+.proof-rating strong{font-size:2rem}
+.proof-rating .stars{font-size:.72rem;margin:.15rem 0}
+.proof-rating small{font-size:.62rem}
+.testimonial-grid{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
+.testimonial-grid blockquote{
+  width:144px;
+  height:48px;
+  min-width:144px;
+  min-height:48px;
+  margin:0;
+  padding:.35rem .5rem;
+  border-radius:8px;
+  background:#111;
+  color:#fff;
+  border:0;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.testimonial-grid blockquote p{
+  font-family:inherit;
+  font-size:.58rem;
+  line-height:1.15;
+  margin:0;
+  display:-webkit-box;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.testimonial-grid blockquote footer{display:none!important}
+.lead-section{gap:1.3rem}
+.direct-contact{font-size:.74rem}
+#mc_embed_signup h3{font-size:1.15rem}
+#mc_embed_signup .mc-field-group label{font-size:.66rem}
+#mc_embed_signup .mc-field-group input,
+#mc_embed_signup .mc-field-group textarea{font-size:.74rem!important;min-height:32px!important;padding:.42rem .52rem!important}
+#mc_embed_signup .message-field textarea{min-height:58px!important}
+#mc_embed_signup #mc-embedded-subscribe{font-size:.7rem!important;padding:.5rem .72rem!important}
+.mailchimp-note{font-size:.58rem}
+.mailchimp-brand img{width:95px!important}
+footer{font-size:.68rem;padding:1.4rem max(18px,calc((100vw - var(--max))/2))}
+@media(max-width:560px){
+  body{font-size:12px}
+  .hero h1{font-size:1.9rem}
+  .section h2,.section-narrow h2{font-size:1.55rem}
+  .market-card h2{font-size:1.25rem}
+  .testimonial-grid blockquote{width:132px;min-width:132px;height:46px;min-height:46px}
+}
