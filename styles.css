@@ -313,3 +313,80 @@ footer{font-size:.68rem;padding:1.4rem max(18px,calc((100vw - var(--max))/2))}
   .florida-search-group::before{width:86px;height:86px;opacity:.075}
   .nj-search-group::before{width:112px;height:64px;opacity:.07}
 }
+
+/* Make Florida and New Jersey search identities clearly distinct */
+.florida-search-group{
+  background:
+    linear-gradient(135deg, rgba(255,244,219,.96), rgba(238,248,246,.94)) !important;
+  border-color:#e8d5aa !important;
+  box-shadow:inset 0 0 0 1px rgba(185,148,69,.05);
+}
+
+.nj-search-group{
+  background:
+    linear-gradient(135deg, rgba(238,243,247,.98), rgba(248,248,248,.96)) !important;
+  border-color:#cfd8de !important;
+  box-shadow:inset 0 0 0 1px rgba(93,112,124,.05);
+}
+
+.florida-search-group::before,
+.nj-search-group::before{
+  z-index:0 !important;
+}
+
+.florida-search-group::before{
+  right:18px !important;
+  bottom:10px !important;
+  width:150px !important;
+  height:150px !important;
+  opacity:.18 !important;
+}
+
+.nj-search-group::before{
+  right:16px !important;
+  bottom:8px !important;
+  width:190px !important;
+  height:105px !important;
+  opacity:.16 !important;
+}
+
+.florida-search-group .search-market-heading,
+.florida-search-group .search-grid,
+.nj-search-group .search-market-heading,
+.nj-search-group .search-grid{
+  position:relative;
+  z-index:1;
+}
+
+.florida-search-group .search-card{
+  background:rgba(255,253,247,.92) !important;
+  border-color:#eadbb8 !important;
+}
+
+.nj-search-group .search-card{
+  background:rgba(248,250,252,.94) !important;
+  border-color:#d5dde2 !important;
+}
+
+.florida-search-group .pill{
+  background:#f4e7c7 !important;
+  color:#6f5729 !important;
+}
+
+.nj-search-group .pill{
+  background:#dde6eb !important;
+  color:#465864 !important;
+}
+
+@media(max-width:560px){
+  .florida-search-group::before{
+    width:110px !important;
+    height:110px !important;
+    opacity:.14 !important;
+  }
+  .nj-search-group::before{
+    width:135px !important;
+    height:78px !important;
+    opacity:.13 !important;
+  }
+}
